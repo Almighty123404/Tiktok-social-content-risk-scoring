@@ -210,12 +210,6 @@ Content flagged as a "claim" is ~7x more likely to come from a banned author tha
 
 ---
 
-## Resume Bullet Point
-
-> Built end-to-end trust & safety ML pipeline for TikTok-like platform dataset (19k videos): SQL analysis identified claim-heavy content drives 1/3 of banned-author engagement; cross-validated ensemble ML achieves 0.699 ROC-AUC with interpretable SHAP-based explanations; comprehensive leakage audit + NLP feature analysis confirms model validity despite text redundancy with labels.
-
----
-
 ## Files Generated (V2)
 
 **Analytics & Charts:**
