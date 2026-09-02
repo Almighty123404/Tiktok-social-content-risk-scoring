@@ -1,4 +1,4 @@
-# Trust & Safety Risk Analytics V2 — Upgraded ML Pipeline
+# Trust & Safety Risk Analytics - TikTok
 
 **Goal:** Identify what distinguishes videos/authors that get flagged or banned on a social video platform, using SQL for diagnostic analysis and an ML ensemble to turn that diagnosis into a predictive risk score — the kind of analysis a Business/Product/Strategy Analyst would be asked to produce at a fast-growing consumer social app.
 
