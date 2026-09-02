@@ -94,7 +94,7 @@ Full results with tables: `outputs/eda_results.md`
 
 **Method:** Mann-Whitney U tests, distribution overlap (KS statistic), zero-engagement frequency, coefficient of variation across ban statuses.
 
-**Finding:** ✅ **Engagement is consistent with pre-ban (organic) behavior**
+**Finding:**  **Engagement is consistent with pre-ban (organic) behavior**
 - Banned/under-review authors have **higher** median engagement (opposite of suppression)
 - Engagement ratios (like/view, share/view) are similar across groups
 - No excess zero-count records among banned authors
@@ -200,11 +200,11 @@ XGBoost multiclass (weighted F1: 0.55) — captures finer-grained risk levels bu
 Content flagged as a "claim" is ~7x more likely to come from a banned author than opinion content. At-risk authors account for roughly a **third of all platform engagement** — making claim-heavy content a meaningful share of platform activity, not a fringe moderation issue.
 
 **V2 adds:**
-- ✅ Robust cross-validation (mean ± std across 5 folds) confirms V1 performance is stable
-- ✅ Honest analysis of NLP features: text column redundancy with `is_claim` documented
-- ✅ Data validity audit: engagement is organic, not a post-ban artifact
-- ✅ Cost-aware threshold optimization: can adjust FN:FP trade-off for business priorities
-- ✅ SHAP explanations: actionable interpretation of individual flagged accounts
+-  Robust cross-validation (mean ± std across 5 folds) confirms V1 performance is stable
+-  Honest analysis of NLP features: text column redundancy with `is_claim` documented
+-  Data validity audit: engagement is organic, not a post-ban artifact
+-  Cost-aware threshold optimization: can adjust FN:FP trade-off for business priorities
+-  SHAP explanations: actionable interpretation of individual flagged accounts
 
 **Production-ready:** Model is calibrated, thresholds are optimized for trust & safety cost assumptions, and explanations per author are available for review teams.
 
@@ -248,7 +248,7 @@ Content flagged as a "claim" is ~7x more likely to come from a banned author tha
 ## Key Research Insights
 
 - **SQL layer insight validated:** Text analysis confirms that claim content is the strongest categorical signal, with engagement being a strong secondary signal.
-- **Honest negative result:** Adding raw NLP features doesn't improve beyond `is_claim`. This is a valuable analytical finding: if text were independently predictive of bans beyond the label, we would see it here.
+- **NLP negative result:** Adding raw NLP features doesn't improve beyond `is_claim`. This is a valuable analytical finding: if text were independently predictive of bans beyond the label, we would see it here.
 - **Engagement is organic:** Statistical evidence suggests engagement metrics reflect pre-ban behavior, not post-moderation artifacts.
 - **Cost-aware optimization:** Threshold optimization shows recall can improve by 10.7% with modest precision loss, enabling flexible business policies.
 
